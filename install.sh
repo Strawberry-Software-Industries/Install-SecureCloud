@@ -21,7 +21,7 @@ git_install () {
     echo ""
   else
     echo "Installing git..."
-    apt-get install -q -y git
+    sudo apt install -q -y git
     if [ "$?" -ne "0" ]; then
       echo "Unable to install git! Please check your problem and then try again"
       echo "Installation aborted."
@@ -37,7 +37,7 @@ python_install () {
     echo ""
   else
     echo "Installing python3..."
-    apt-get install -q -y python3
+    sudo apt install -q -y python3
     if [ "$?" -ne "0" ]; then
       echo "Unable to install python3! Please check your problem and then try again"
       echo "Installation aborted."
@@ -53,7 +53,7 @@ pip3_install () {
     echo ""
   else
     echo "Installing pip3..."
-    apt-get install -q -y python3-pip
+    sudo apt install -q -y python3-pip
     if [ "$?" -ne "0" ]; then
       echo "Unable to install pip3! Please check your problem and then try again"
       echo "Installation aborted."
