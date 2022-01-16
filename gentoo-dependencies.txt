@@ -1,0 +1,1 @@
+sudo emerge -a dev-vcs/git dev-lang/python dev-python/pip dev-python/flask
