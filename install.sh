@@ -10,8 +10,9 @@ Supported=false
 [[ "${ReleaseID}" == "Ubuntu" && "${VersionID}" =~ "21.04" ]] && Supported=true
 [[ "${ReleaseID}" == "Ubuntu" && "${VersionID}" =~ "21.10" ]] && Supported=true
 
-[[ "${ReleaseID}" == "Debian" && "${VersionID}" == "10"    ]] && Supported=true
-[[ "${ReleaseID}" == "Debian" && "${VersionID}" == "11"    ]] && Supported=true
+[[ "${ReleaseID}" == "Debian" && "${VersionID}" =~ "10"    ]] && Supported=true
+[[ "${ReleaseID}" == "Debian" && "${VersionID}" =~ "11"    ]] && Supported=true
+[[ "${ReleaseID}" == "Debian" && "${VersionID}" =~ "12"    ]] && Supported=true
 
 [[ "${Supported}" == "false" ]] && echo "This distribution version is not supported. Aborting" && exit
 
