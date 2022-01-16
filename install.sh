@@ -17,7 +17,7 @@ Supported=false
 
 git_install () {
     echo "Checking if git is installed..."
-    if command -v curl > /dev/null; then
+    if command -v git > /dev/null; then
     echo "Detected git..."
     echo ""
   else
